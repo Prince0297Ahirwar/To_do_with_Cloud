@@ -8,4 +8,5 @@ db.on('error', console.error.bind(console, 'connection error while connectiong t
 db.once('open', function() {
   // we're connected!
   console.log("succcessful connection to database");
+
 });
