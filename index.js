@@ -10,12 +10,14 @@ const db = require('./config/mongoose');
 app.set("view engine","ejs");
 app.set("views",'./views');
 
+//for parsing parsing form data using express
+
+app.use(express.urlencoded({ extended: true }));
+
 
 //routing to routes
 
 app.use('/',require('./routes'));
-
-
 //setting static files for app
 
 app.use(express.static('assets'));

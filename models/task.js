@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 //creating schema
 
-const taskSchema = new mongoose.schema(
+const taskSchema = new mongoose.Schema(
     {
         description:{
             type:String,
@@ -14,7 +14,7 @@ const taskSchema = new mongoose.schema(
             required:true
         },
         dueDate:{
-            type:date
+            type:Date
         }
     }
 );

@@ -9,7 +9,7 @@
 <body>
     <h1 style="text-align: center;">TO DO app</h1>
     <div>
-        <form action="">
+        <form action="/addTask" method="POST">
             <label for="description">DESCRIPTION</label>
             <textarea name="task_description" id="description" cols="30" rows=10">
 
@@ -28,10 +28,26 @@
             <input type="date" name ="date"  id="date">
             <br>
             <button type="submit">ADD TASK</button>
-            <button type="submit">DELETE TASK</button>
         </form>
 
         <!-- presenting tast on screen -->
+        <div>
+            <ul>
+                <%for(let i of tasks_list) {%>
+                    <li>
+                        
+                        <p>
+                            <%=i.description%>
+                            
+                        </p>
+                        <p>
+                            <%=i.category%>
+                        </p>
+                        <p><%=i.dueDate%></p>
+                    </li>
+                <%}%>
+            </ul>
+        </div>
         
     </div>
 </body>
