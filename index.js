@@ -3,6 +3,8 @@ const app = express();
 
 const port = 8000;
 
+//adding mongoose
+const db = require('./config/mongoose');
 //setting up ejs engine and path
 
 app.set("view engine","ejs");
