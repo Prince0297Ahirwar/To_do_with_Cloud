@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/to_do_db',{useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://prince1204:prince1204@cluster0.eealq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{useNewUrlParser: true, useUnifiedTopology: true});
 
 const db = mongoose.connection;
 
